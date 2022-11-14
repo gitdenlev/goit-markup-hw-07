@@ -1,0 +1,38 @@
+.hero-item {
+    flex-basis: 270px;
+}
+
+.hero-list {
+    display: flex;
+    gap: 30px;
+}
+
+.hero-icon-box {
+    width: 270px;
+    height: 120px;
+    margin-bottom: 30px;
+    background: var(--background-our-team);
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: var(--secondary-text-color);
+    margin-bottom: 10px;
+}
+
+.hero-text {
+    line-height: 1.71;
+    color: var(--primary-text-color);
+}
+
+.hero {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
