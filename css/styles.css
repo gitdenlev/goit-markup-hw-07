@@ -168,10 +168,8 @@ ul {
 .banner {
   background-color: var(--banner);
   padding: 200px 0;
-  background-image: linear-gradient(
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)
-    ),
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)),
     url(../img/hero-bg.jpg);
   background-repeat: no-repeat;
   background-position: center;
@@ -193,7 +191,24 @@ ul {
   margin: 0 auto;
 }
 
-
+.banner-button {
+  border: 0;
+  border-radius: 0;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: var(--white-color);
+  background: var(--accent-color);
+  cursor: pointer;
+  margin-top: 30px;
+  padding: 10px 32px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 
 .hero-item {
   flex-basis: 270px;
@@ -214,6 +229,8 @@ ul {
   align-items: center;
   justify-content: center;
 }
+
+
 .hero-title {
   font-weight: 700;
   font-size: 14px;
@@ -261,6 +278,7 @@ ul {
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .project-link:focus .project-definition .definition-text {
   transform: translateY(0);
 }
@@ -362,6 +380,7 @@ ul {
   background-color: var(--accent-color);
   fill: var(--white-color);
 }
+
 
 .partners-list {
   display: flex;
@@ -655,12 +674,16 @@ footer {
   justify-content: center;
   cursor: pointer;
 }
+
 .modal-close-icon {
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal-close-icon:hover {
+
+.modal-close-icon:hover,
+:focus {
   fill: var(--accent-color);
 }
+
 .backdrop.is-hidden {
   opacity: 0;
   visibility: hidden;
@@ -670,19 +693,16 @@ footer {
 .backdrop.is-hidden .modal {
   transform: translate(-50%, -50%) scaleY(0);
 }
+
 .modal-title {
-  font-family: "Roboto" sans-serif;
-  font-style: normal;
   font-weight: 700;
   font-size: 20px;
-  line-height: 23px;
-  text-align: center;
+  line-height: 1.15;
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
-  align-items: center;
   text-align: center;
-  justify-content: center;
 }
+
 .modal-input {
   width: 448px;
   height: 40px;
@@ -690,11 +710,26 @@ footer {
   border-radius: 4px;
   outline: transparent;
   text-indent: 42px;
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal-input:focus{
+
+.modal-input:focus {
   border-color: var(--accent-color);
 }
+
+
+
+.modal-input:focus+.modal-input-name {
+  fill: var(--accent-color);
+}
+
+.modal-input:focus+.modal-input-phone {
+  fill: var(--accent-color);
+}
+
+.modal-input:focus+.modal-input-mail {
+  fill: var(--accent-color);
+}
+
 
 .modal-input-name {
   position: absolute;
@@ -702,6 +737,7 @@ footer {
   top: 50%;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .modal-input-name:hover {
   fill: var(--accent-color);
 }
@@ -712,18 +748,22 @@ footer {
   top: 50%;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .modal-input-phone:hover {
   fill: var(--accent-color);
 }
+
 .modal-input-mail {
   position: absolute;
   left: 12px;
   top: 50%;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .modal-input-mail:hover {
   fill: var(--accent-color);
 }
+
 .input-label {
   display: block;
   position: relative;
@@ -735,24 +775,26 @@ footer {
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
-  line-height: 14px;
+  line-height: 1.16;
   letter-spacing: 0.01em;
   color: var(--primary-text-color);
   margin-bottom: 4px;
 }
+
 .form-title-name {
   display: block;
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
-  line-height: 14px;
+  line-height: 1.16;
   letter-spacing: 0.01em;
   color: var(--primary-text-color);
-  margin-top: 12px;
   margin-bottom: 4px;
 }
+
 .form-textarea {
+  display: block;
   width: 448px;
   height: 120px;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -762,12 +804,15 @@ footer {
   resize: none;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .form-textarea::placeholder {
   margin-left: 150px;
 }
+
 .form-textarea:focus {
   border-color: transparent;
 }
+
 .form-field {
   position: absolute;
   width: 425px;
@@ -775,6 +820,24 @@ footer {
   margin-top: 168px;
   left: 52px;
 }
+
+.footer-soc-networks-2 {
+  margin-left: 93px;
+}
+
+.footer-soc-title-2 {
+  width: 207px;
+  height: 16px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--white-color);
+}
+
 .form-btn {
   width: 200px;
   height: 50px;
@@ -785,21 +848,24 @@ footer {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 16px;
-  line-height: 30px;
+  line-height: 1.87;
   letter-spacing: 0.06em;
   color: var(--white-color);
 }
+
 .check-icon {
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .check-text {
   font-size: 14px;
-  line-height: 24px;
+  line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
   display: flex;
   align-items: center;
 }
+
 .check-text span {
   content: "";
   width: 16px;
@@ -813,20 +879,24 @@ footer {
   fill: transparent;
   margin-right: 7px;
 }
-.input-check:checked + .check-text span {
+
+.input-check:checked+.check-text span {
   background-color: var(--accent-color);
   border-color: transparent;
   fill: var(--white-color);
 }
-.input-check:focus + .check-text span {
+
+.input-check:focus+.check-text span {
   border-color: var(--accent-color);
 }
+
 .link-input {
   text-decoration-color: #188ce8;
   margin-left: 7px;
   color: #188ce8;
   text-decoration: underline 1px solid var(--accent-color);
 }
+
 .email-area {
   font-family: "Roboto", sans-serif;
   width: 358px;
@@ -838,30 +908,35 @@ footer {
   margin-top: 20px;
   font-weight: 400;
   font-size: 16px;
-  line-height: 20px;
+  line-height: 1.25;
   display: flex;
   align-items: center;
   justify-content: center;
   text-indent: 15px;
   padding-top: 15px;
 }
+
 .input-wrap {
   position: relative;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
-.input-post{
+
+.input-post {
   display: flex;
   align-items: center;
   justify-content: center;
   margin-top: 20px;
 }
-.btn-send{
+
+.btn-send {
   display: flex;
   align-items: center;
   justify-content: center;
   margin-top: 30px;
 }
+
 /*Футер(секція підписатися)*/
+
 .footer-email-to {
   letter-spacing: 0.03em;
   text-transform: uppercase;
@@ -901,6 +976,7 @@ footer {
   vertical-align: middle;
   margin-left: 10px;
 }
+
 .footer-input {
   width: 358px;
   height: 50px;
@@ -911,6 +987,13 @@ footer {
   text-indent: 16px;
   color: var(--white-color);
 }
+
 .modal-form {
+  margin-top: 12px;
+}
+
+.modal-form-footer {
   margin-top: 20px;
+  display: flex;
+  align-items: center;
 }

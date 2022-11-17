@@ -13,3 +13,10 @@
     --portfolio-definition: rgba(33, 150, 243, 0.9);
     --banner: rgba(47, 48, 58, 0.4);
 }
+body {
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    background-color: var(--white-color);
+    padding-top: 80px;
+}

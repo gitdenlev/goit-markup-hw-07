@@ -1,23 +1,13 @@
-@import './utils/variables';
-@import './base/reseat';
-// Хедер
 @import './header';
-// Секція ""
-@import './banner';
-// Секція "Наші навички"
+@import './base/reset';
+@import './components/container';
+@import './utils/hidden';
+@import './utils/variables';
+@import './modal';
+@import './body';
 @import './hero';
-// Секція "Чим ми займаємось"
 @import './projects';
-// Секція "Наша команда"
-
-// Секція "Постійні клієнти"
-@import './partners';
-
-
-
-
-
-// Футер
+@import './team';
 @import './footer';
 
 
@@ -25,12 +15,4 @@
 
 
 
-// Кнопка банера 
-@import './components/banner-button';
-// Модальне вікно
-@import './modal';
 
-
-
-// Портфоліо
-@import ''
