@@ -967,8 +967,8 @@ footer {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.forn-btn:hover,
-.form.btn:focus {
+.form-btn:hover,
+.form-btn:focus {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
