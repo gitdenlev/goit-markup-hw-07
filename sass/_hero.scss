@@ -12,7 +12,7 @@
     text-align: center;
 }
 
-.banner-title {
+.banner__title {
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
@@ -24,7 +24,7 @@
     margin: 0 auto;
 }
 
-.banner-button {
+.banner__button {
     border: 0;
     border-radius: 0;
     font-family: "Roboto", sans-serif;
@@ -47,12 +47,12 @@
     flex-basis: 270px;
 }
 
-.hero-list {
+.soc__list {
     display: flex;
     gap: 30px;
 }
 
-.hero-icon-box {
+.soc__icon-box {
     width: 270px;
     height: 120px;
     margin-bottom: 30px;
@@ -64,7 +64,7 @@
 }
 
 
-.hero-title {
+.soc__title {
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
@@ -73,7 +73,7 @@
     margin-bottom: 10px;
 }
 
-.hero-text {
+.soc__text {
     line-height: 1.71;
     color: var(--primary-text-color);
 }

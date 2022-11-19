@@ -10,7 +10,7 @@
     z-index: 5;
 }
 
-.header-navigation {
+.navigation {
     display: flex;
 }
 
@@ -22,13 +22,13 @@
     color: var(--accent-color);
 }
 
-.header-logo {
+.navigation__logo {
     padding-top: 24px;
     padding-bottom: 25px;
     margin-right: 93px;
 }
 
-.header-list {
+.menu {
     display: flex;
     gap: 50px;
 }
@@ -51,7 +51,7 @@
     color: var(--secondary-text-color);
 }
 
-.header-link {
+.menu__link {
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em;
@@ -68,13 +68,13 @@
         }
 }
 
-.header-contacts-list {
+.contacts {
     display: flex;
     gap: 30px;
     margin-left: auto;
 }
 
-.contact-link {
+.contacts__link {
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em;

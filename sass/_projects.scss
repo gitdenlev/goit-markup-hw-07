@@ -1,10 +1,12 @@
-.projects,
+.projects{
+    padding-bottom: 94px;
+}
 .partners {
     padding-bottom: 94px;
     padding-top: 94px;
 }
 
-.projects-title {
+.project__title {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
@@ -13,7 +15,7 @@
     margin-bottom: 50px;
 }
 
-.projects-list {
+.project__list {
     display: flex;
     gap: 30px;
     justify-content: space-evenly;
@@ -29,11 +31,11 @@
     transform: translateY(0);
 }
 
-.projects-card {
+.project__card {
     position: relative;
 }
 
-.projects-description {
+.project__description {
     position: absolute;
     bottom: 0;
     display: flex;
