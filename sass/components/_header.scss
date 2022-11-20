@@ -10,7 +10,7 @@
     z-index: 5;
 }
 
-.navigation {
+.header__navigation {
     display: flex;
 }
 
@@ -28,7 +28,7 @@
     margin-right: 93px;
 }
 
-.menu {
+.header__menu {
     display: flex;
     gap: 50px;
 }
@@ -68,7 +68,7 @@
         }
 }
 
-.contacts {
+.header__contacts {
     display: flex;
     gap: 30px;
     margin-left: auto;

@@ -111,3 +111,6 @@ main {
             transform: translateY(0);
         }
 }
+.current:visited {
+    color: var(--accent-color);
+}

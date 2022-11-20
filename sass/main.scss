@@ -1,17 +1,18 @@
-@import './header';
+@import './utils/modern-normolize';
+@import './components/header';
 @import './base/reset';
 @import './components/container';
 @import './utils/hidden';
 @import './utils/variables';
-@import './modal';
-@import './body';
-@import './hero';
-@import './projects';
-@import './team';
-@import './clients';
-@import './footer';
+@import './components/modal';
+@import './components/body';
+@import './components/hero';
+@import './components/projects';
+@import './components/team';
+@import './components/clients';
+@import './components/footer';
 // Портфоліо
-@import './project-portfolio';
+@import './components/project-portfolio';
 
 
 
